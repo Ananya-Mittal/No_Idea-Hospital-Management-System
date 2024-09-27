@@ -1,7 +1,7 @@
  // JavaScript function to open a new page for Bed Availability
  function openBedAvailability() {
     // Replace with the actual URL of the Bed Availability page
-    window.open('http://127.0.0.1:5500/Medix/requirementPg.html', '_blank');
+    window.open('requirementsPg.html', '_blank');
     // app.js
 
 const express = require('express')

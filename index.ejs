@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital Management System</title>
+</head>
+<body>
+  <h1>Hospital Management System</h1>
+  <form action="/patients" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="number">Number:</label>
+    <input type="number" id="number" name="number"><br><br>
+    <label for="dob">Date of Birth:</label>
+    <input type="text" id="dob" name="dob"><br><br>
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city"><br><br>
+    <input type="submit" value="Add Patient">
+  </form>
+  <h2>Available Beds: <span id="available-beds"></span></h2>
+  <script>
+    fetch('/beds/availability')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('available-beds').innerHTML = data.availableBeds;
+      });
+  </script>
+</body>
+</html>
