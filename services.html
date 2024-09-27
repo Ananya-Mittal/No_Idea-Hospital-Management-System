@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <header></header>
+        
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">Medix</a>
+            </div>
+
+            <!-- Links -->
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="#">Guidelines</a>
+                        <a href="#">Report</a>
+                    </div>
+                </li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+            <!-- Sidebar (Three Dots) -->
+            <div class="sidebar">
+                <a href="#">&#x22EE;</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    <h1>Medix Services</h1>
+
+    <div class="services">
+        <!-- OPD -->
+        <div class="service-box">
+            <h2>OPD</h2>
+            <p>Outpatient Department services</p>
+            <a href="#">Go to OPD</a>
+        </div>
+
+          <!-- Check Bed Availability -->
+          <div class="service-box">
+            <h2>Check Bed Availability</h2>
+            <p>View available beds in the hospital</p>
+            <!-- JavaScript function will handle the click event for this link -->
+            <a href="requirementPg.html" onclick="openBedAvailability()">Check Now</a>
+        </div>
+
+        <!-- Blood Bank -->
+        <div class="service-box">
+            <h2>Blood Bank</h2>
+            <p>Find and request blood</p>
+            <a href="#">Visit Blood Bank</a>
+        </div>
+
+        <!-- Book an Appointment -->
+        <div class="service-box">
+            <h2>Book an Appointment</h2>
+            <p>Schedule an appointment with a doctor</p>
+            <a href="#">Book Now</a>
+        </div>
+
+        <!-- Pharmacy -->
+        <div class="service-box">
+            <h2>Pharmacy</h2>
+            <p>Get your prescription medicines</p>
+            <a href="#">Go to Pharmacy</a>
+        </div>
+
+        <!-- Book Home Appointment -->
+        <div class="service-box">
+            <h2>Book Home Appointment</h2>
+            <p>Get medical services at home</p>
+            <a href="#">Book Home Visit</a>
+        </div>
+    </div>
+
+    </main>
+    <footer>
+        &copy; 2024, Medix.com, Inc. or its affiliates
+    </footer>
+    <script src="services.js" ></script>
+</body>
+</html>

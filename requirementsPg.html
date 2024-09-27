@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="requirementsPg.css">
+</head>
+<body>
+    <header></header>
+        
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">Medix</a>
+            </div>
+
+            <!-- Links -->
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="#">Guidelines</a>
+                        <a href="#">Report</a>
+                    </div>
+                </li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+            <!-- Sidebar (Three Dots) -->
+            <div class="sidebar">
+                <a href="#">&#x22EE;</a>
+            </div>
+        </nav>
+
+    </header>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button>
+                <i class="fas fa-search"></i>
+            </button>
+            <select class="filter">
+                <option value="">Filter</option>
+                <option value="option1">Filter 1</option>
+                <option value="option2">Filter 2</option>
+            </select>
+        </div>
+
+        <div class="input-tab">
+            <label for="requirement">Requirement:</label>
+            <select id="requirement">
+                <option value="">Select Requirement</option>
+                <option value="bed_availability">🛏 Bed Availability</option>
+                <option value="room_service">🛎 Room Service</option>
+                <option value="emergency">🚑 Emergency Services</option>
+            </select>
+        </div>
+        
+        <div class="input-tab">
+            <label for="type">Type:</label>
+            <select id="type">
+                <option value="">Select Type</option>
+                <option value="inpatient">🏥 Inpatient</option>
+                <option value="outpatient">🏥 Outpatient</option>
+                <option value="surgery">🔪 Surgery</option>
+            </select>
+        </div>
+
+        <div class="input-tab">
+            <label for="specialist">Specialist:</label>
+            <input type="text" id="specialist" placeholder="Enter Specialist">
+           
+        </div>
+
+        <div class="input-tab">
+            <label for="hospital">Hospital:</label>
+            <input type="text" id="hospital" placeholder="Enter Hospital">
+            
+        </div>
+
+        <div class="ok-button">
+            <button id="submitBtn">OK</button>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024, Medix.com, Inc. or its affiliates
+    </footer>
+
+    <script src="requirementsPg.js"></script>
+</body>
+</html>
